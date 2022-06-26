@@ -34,8 +34,24 @@ fn main()
 
 
     //**************************  The Array Type *********************************************//
-    
+
     // Arrays are useful when you want your data allocated on the stack rather than the heap
+
+    let a = [1,2,3,4,5];
+
+    // You write an array’s type using square brackets with the 
+    // type of each element, a semicolon, and then the number of 
+    // elements in the array, like so:
+    let b:[i32;5] = [1,2,3,4,5];
+
+    let c = [3;5];
+    // he array named a will contain 5 elements that will all be set to the value 3 initially. 
+    // This is the same as writing let a = [3, 3, 3, 3, 3]; but in a more concise way.
+
+
+    // accessing array elements
+    let first = a[0];
+    let second = a[1];
 
 
 
