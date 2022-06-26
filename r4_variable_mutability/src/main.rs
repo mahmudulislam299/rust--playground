@@ -2,6 +2,13 @@
 // When a variable is immutable, once a value is 
 // bound to a name, you can’t change that value
 
+
+
+// this is constant and this is always immutable
+// Rust’s naming convention for constants is to use 
+// all uppercase with underscores between words.
+const THREE_HOURS_IN_SECONDS : u32 = 60*60*3;
+
 fn main() 
 {
     println!("Hello, world!");
