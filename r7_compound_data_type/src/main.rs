@@ -17,6 +17,7 @@ fn main()
     // We’ve added optional type annotations in this example
 
     let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let tup2 = (101, 56.6, 'c');
 
     // This is called destructuring, because it breaks the single tuple into three parts
     let (x, y, z) = tup;
@@ -31,6 +32,10 @@ fn main()
     let one = tup.2;
     println!("the value of tupple are {} {} {}", tup.0, tup.1, tup.2);
 
+
+    //**************************  The Array Type *********************************************//
+    
+    // Arrays are useful when you want your data allocated on the stack rather than the heap
 
 
 
