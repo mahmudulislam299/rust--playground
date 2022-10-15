@@ -2,6 +2,8 @@
 // When a variable is immutable, once a value is 
 // bound to a name, you can’t change that value
 
+// An attribute to hide warnings for unused code.
+#![allow(dead_code)]
 
 
 // this is constant and this is always immutable
