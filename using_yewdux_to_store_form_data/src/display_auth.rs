@@ -3,7 +3,7 @@ use std::rc::Rc;
 use yew::prelude::*;
 use yewdux::prelude::*;
 
-use crate::stores::auth_store::AuthStore;
+use crate::stores::ustomerInfo_store::AuthStore;
 
 pub enum Msg {
     Store(Rc<AuthStore>),
@@ -30,23 +30,23 @@ impl Component for DisplayAuth {
     }
 
     fn view(&self, _ctx: &Context<Self>) -> Html {
-        let auth_store = self.dispatch.get();
+        let ustomerInfo_store = self.dispatch.get();
         let username = format!(
             "Username: {}",
-            auth_store.username.as_deref().unwrap_or_default()
+            ustomerInfo_store.username.as_deref().unwrap_or_default()
         );
         let password = format!(
             "Password: {}",
-            auth_store.password.as_deref().unwrap_or_default()
+            ustomerInfo_store.password.as_deref().unwrap_or_default()
         );
-        let is_authenticated = format!("Is Authenticated: {:?}", auth_store.is_authenticated);
+        let is_ustomerInfoenticated = format!("Is Authenticated: {:?}", ustomerInfo_store.is_ustomerInfoenticated);
 
         html! {
             <div>
                 <h2>{"Auth Store"}</h2>
                 <div>{username}</div>
                 <div>{password}</div>
-                <div>{is_authenticated}</div>
+                <div>{is_ustomerInfoenticated}</div>
             </div>
         }
     }
