@@ -1,0 +1,9 @@
+[package]
+name = "shape_3d_formula_lib_test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+formula_3d_shape_lib = "0.1.1"
